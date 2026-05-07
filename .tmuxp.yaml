@@ -1,16 +1,16 @@
-session_name: Template-Py
+session_name: PyAgent
 windows:
-  - window_name: Template-Py
+  - window_name: PyAgent
     layout: main-vertical
     options:
       main-pane-width: 20%
     panes:
       - shell_command:
-          - cd ~/Documents/Notes/Projects/template-py
+          - cd ~/Documents/Projects/pyagent
           # - nvim Notes.md ToDo.md
           - open-project
       - shell_command:
           - tmux resizep -y 85%
-          - filelist-open "startup_files.txt" template-py
+          - filelist-open "startup_files.txt" pyagent
         focus: true
       - clear
