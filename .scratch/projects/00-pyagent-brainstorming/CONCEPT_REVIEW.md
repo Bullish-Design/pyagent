@@ -148,15 +148,6 @@ The project spans: Python library + Pydantic schemas + async runtime + sync wrap
 - Accept that the bridge (Milestone 3-4) may never ship, and that's OK
 - Consider whether the project would be viable as RPC-only permanently
 
-### 4.4 Devenv as a barrier to contribution (LOW-MEDIUM)
-
-While Nix/devenv ensures reproducibility, it also means contributors need Nix installed and working. On non-NixOS systems, Nix installation and first-build times can be significant.
-
-**Mitigation strategy:**
-- Provide a `docker`-based fallback for contributors who can't/won't use Nix
-- Keep the Python package itself installable via standard `pip`/`uv` for users who only consume the library
-- Reserve Nix as mandatory only for development and CI
-
 ---
 
 ## 5. Design questions requiring resolution
